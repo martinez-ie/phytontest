@@ -1,0 +1,21 @@
+# Criação de Calculadora
+
+# Solicitar os dois números ao usuário e convertê-los para inteiros
+n1 = int(input("Digite o primeiro número (n1): "))
+n2 = int(input("Digite o segundo número (n2): "))
+
+# Operações aritméticas
+adicao = n1 + n2
+subtracao = n1 - n2
+multiplicacao = n1 * n2
+divisao = n1 / n2 if n2 != 0 else "Divisão por zero não é permitida"
+modulo = n1 % n2 if n2 != 0 else "Módulo por zero não é permitido"
+exponenciacao = n1 ** n2
+
+# Exibir os resultados
+print(f"Resultado da Adição: {adicao}")
+print(f"Resultado da Subtração: {subtracao}")
+print(f"Resultado da Multiplicação: {multiplicacao}")
+print(f"Resultado da Divisão: {divisao}")
+print(f"Resultado do Módulo: {modulo}")
+print(f"Resultado da Exponenciação: {exponenciacao}")
