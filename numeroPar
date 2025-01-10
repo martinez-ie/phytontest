@@ -1,0 +1,10 @@
+# Verificar se o número é par
+
+# Solicitar um número inteiro ao usuário
+numero = int(input("Digite um número inteiro: "))
+
+# Verificar se o número é par
+if numero % 2 == 0:
+    print(f"\nO número {numero} é par.")
+else:
+    print(f"\nO número {numero} é ímpar.")
