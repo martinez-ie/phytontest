@@ -1,0 +1,32 @@
+# Calculadora com escolha de operação
+
+# Solicitar os dois números ao usuário
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+
+# Solicitar o tipo de operação
+print("\nEscolha a operação que você gostaria de realizar:")
+print("Soma, Subtração, Divisão, Multiplicação, Potência")
+operacao = input("Digite o nome da operação: ").strip().lower()
+
+# Realizar a operação escolhida e exibir o resultado
+if operacao == "soma":
+    resultado = num1 + num2
+    print(f"\nResultado: {num1} + {num2} = {resultado}")
+elif operacao == "subtração" or operacao == "subtracao":
+    resultado = num1 - num2
+    print(f"\nResultado: {num1} - {num2} = {resultado}")
+elif operacao == "divisão" or operacao == "divisao":
+    if num2 != 0:
+        resultado = num1 / num2
+        print(f"\nResultado: {num1} / {num2} = {resultado}")
+    else:
+        print("\nErro: Não é possível dividir por zero!")
+elif operacao == "multiplicação" or operacao == "multiplicacao":
+    resultado = num1 * num2
+    print(f"\nResultado: {num1} * {num2} = {resultado}")
+elif operacao == "potência" or operacao == "potencia":
+    resultado = num1 ** num2
+    print(f"\nResultado: {num1} ^ {num2} = {resultado}")
+else:
+    print("\nErro: Operação inválida! Tente novamente com uma das opções listadas.")
