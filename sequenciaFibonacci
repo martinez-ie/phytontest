@@ -1,0 +1,14 @@
+# Solicita ao usuário o número de termos para a sequência de Fibonacci
+n = int(input("Digite o número de termos da sequência de Fibonacci: "))
+
+# Inicializa os dois primeiros termos da sequência
+fibonacci = [0, 1]
+
+# Calcula os termos restantes da sequência até alcançar N termos
+for i in range(2, n):
+    proximo = fibonacci[i-1] + fibonacci[i-2]
+    fibonacci.append(proximo)
+
+# Exibe a sequência de Fibonacci com N termos
+print("\nSequência de Fibonacci:")
+print(" - ".join(map(str, fibonacci[:n])))
